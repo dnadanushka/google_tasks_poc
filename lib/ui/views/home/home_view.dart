@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_starter/ui/views/home/home_view_model.dart';
 import 'package:stacked/stacked.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class HomeView extends ViewModelBuilderWidget<HomeViewModel>{
   const HomeView({Key? key}) : super(key: key);
@@ -21,8 +20,8 @@ class HomeView extends ViewModelBuilderWidget<HomeViewModel>{
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
-              AppLocalizations.of(context)!.title,
+            const Text(
+              'sfffs'
             ),
             Text(
               viewModel.counter.toString(),
